@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="170dp"
+        app:srcCompat="@drawable/ic_wave"
+        android:scaleType="fitXY"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/wave2"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_wave_4"
+        android:scaleType="fitXY"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/foto_perfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        tools:srcCompat = "@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/nome_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto_perfil"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:text="Nome Nome"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_below="@+id/wave2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/CorWave" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/nome_perfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        //LinearLayout que cobre o card inteiro
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //Informações
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/btnEditar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_edit_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/tvEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="editar"
+                    android:textColor="@color/CorIcones"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Email:"
+                    android:textColor="@color/CorWave"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/email_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="emailexemplo@gmail.com"
+                    android:textColor="@color/CorBotao"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Estado:"
+                    android:textColor="@color/CorWave"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/estado_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="SP"
+                    android:textColor="@color/CorBotao"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Cidade:"
+                    android:textColor="@color/CorWave"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/cidade_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Campinas"
+                    android:textColor="@color/CorBotao"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnPet"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_add_circle_outline_black_24dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/nome_pet5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adicionar pet"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

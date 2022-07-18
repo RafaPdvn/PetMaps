@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">PetMaps</string>
+    <string name="LoginEmail">Email</string>
+    <string name="LoginSenha">Senha</string>
+    <string name="CadNome">Nome</string>
+    <string name="CadEmail">Email</string>
+    <string name="CadSenha">Senha</string>
+    <string name="CadConSenha">Confirmar Senha</string>
+    <string name="CadCidade">Cidade</string>
+    <string name="pesquisa">Pesquisar</string>
+
+    <string-array name="Estado">
+        <item>Estado</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="Cidade">
+        <item>Cidade</item>
+    </string-array>
+
+    <string-array name="post">
+        <item>Adoção</item>
+        <item>Perdido</item>
+        <item>Encontrado</item>
+    </string-array>
+
+    <string-array name="raças">
+        <item>SRD (sem raça definida)</item>
+        <item>Basset</item>
+        <item>Beagle</item>
+        <item>Boxer</item>
+        <item>Buldogue</item>
+        <item>Golden Retriver</item>
+        <item>Labrador</item>
+        <item>Pastor Alemão</item>
+        <item>Poodle</item>
+        <item>Shih Tzu</item>
+        <item>Yorkshire terrier</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search">Pesquisar</string>
+    <string name="btchat">Enviar</string>
+    <string name="raca_pet">Raça</string>
+    <string name="idade_pet">Idade</string>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+    tools:context=".Cadastrar">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Insira suas informações abaixo"
+        android:textColor="@color/CorBotao"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Foto"
+        android:textStyle="bold"
+        android:background="@drawable/bg_img_rounded"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_imgview_rounded"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"/>
+
+    <EditText
+        android:id="@+id/campoNome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="@string/CadNome"
+        android:inputType="text"
+        android:textColor="@color/CorBotao"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImg"/>
+
+    <EditText
+        android:id="@+id/campoEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:hint="@string/CadEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/CorBotao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNome"/>
+
+    <EditText
+        android:id="@+id/campoSenha"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="@string/CadSenha"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/CorBotao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmail"/>
+
+    <EditText
+        android:id="@+id/campoConfirmaSenha"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="@string/CadConSenha"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/CorBotao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoSenha"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:entries="@array/Estado"
+        app:layout_constraintStart_toStartOf="@+id/campoConfirmaSenha"
+        app:layout_constraintTop_toBottomOf="@+id/campoConfirmaSenha"/>
+
+    <EditText
+        android:id="@+id/campoCidade"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="@string/CadCidade"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"/>
+
+    <CheckBox
+        android:id="@+id/checkOng"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Marque essa opção se sua conta for de uma ONG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoCidade"/>
+
+    <Button
+        android:id="@+id/btCad"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@color/CorBotao"
+        android:text="Cadastrar"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/CorTextoBotao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkOng"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1006373236319",
+    "firebase_url": "https://pet-maps-2ae7e.firebaseio.com",
+    "project_id": "pet-maps-2ae7e",
+    "storage_bucket": "pet-maps-2ae7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006373236319:android:4c97bcfef2a004a9cc75ea",
+        "android_client_info": {
+          "package_name": "com.example.petmaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006373236319-bmuhnqdrthohfcd1ekatrfqin7q9sel0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petmaps",
+            "certificate_hash": "d7ebab7886e3ac769c5b218eca7942c2e41f5ff9"
+          }
+        },
+        {
+          "client_id": "1006373236319-r5bb2sl8glv5kut1r935s4p1on664kkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOCQ3ZniKKqu6NG_D9JvNBgV-jgtJJVjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006373236319-r5bb2sl8glv5kut1r935s4p1on664kkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="270dp"
+            android:layout_height="222dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="272dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/titulo"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="266dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Seja bem vindo ao Pet Maps"
+            android:textColor="@color/CorBotao"
+            android:textSize="15dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/botaoEntrar"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:background="#292F36"
+            android:text="Entre"
+            android:textColor="@color/CorTextoBotao"
+            tools:layout_editor_absoluteX="143dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/botaoCadastrar"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:background="@color/CorBotao"
+            android:text="Cadastre-se"
+            android:textColor="@color/CorTextoBotao"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="639dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

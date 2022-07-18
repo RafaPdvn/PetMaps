@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dicas"
+        android:icon="@drawable/iconedicas"
+        android:title="DICAS" />
+
+    <item
+        android:id="@+id/navigation_mapa"
+        android:icon="@drawable/iconemapa"
+        android:title="MAPA" />
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/iconeinicio"
+        android:title="INICIO" />
+
+    <item
+        android:id="@+id/navigation_vaquinha"
+        android:icon="@drawable/iconevaquinha"
+        android:title="VAQUINHA" />
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/iconeperfil"
+        android:title="PERFIL" />
+
+</menu>

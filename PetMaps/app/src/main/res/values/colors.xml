@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#FFB626</color>
+    <color name="colorAccent">#292F36</color>
+    <color name="CorBotao">#292F36</color>
+    <color name="CorTextoBotao">#F7F7F7F7</color>
+    <color name="corFundo">#f5cd2f</color>
+    <color name="CinzaClaro">#AFAFAF</color>
+    <color name="CorIcones">#BFBDC1</color>
+    <color name="CorFoto">#ffeed4</color>
+    <color name="CorWave">#ffad31</color>
+    <color name="Cinzinha">#e6e6e6</color>
+</resources>
